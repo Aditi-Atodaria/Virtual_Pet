@@ -4,8 +4,8 @@ var Dog,HappyDog,database,foodS,foodStack
 function preload()
 {
   //load images here
-  DogImage = loadImage("images/dogImg.png");
-  DogImage2 = loadImage("images/dogImg1.png");
+  DogImage = loadImage("dogImg.png");
+  DogImage2 = loadImage("dogImg1.png");
 }
 
 function setup() {
