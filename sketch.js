@@ -35,19 +35,26 @@ function draw() {
  textSize(30);
  fill("White")
  stroke("White");
- text("Food Remaining:",150,100);
+ text("Food Remaining:"+foodS,150,100);
 
-}
-
-function keyPressed(){
   if(keyWentDown(UP_ARROW)){
     writeStock(foodS);
     dog.addImage(DogImage2);
   }
+  
+  if(keyWentUp(UP_ARROW)){
+    //writeStock(foodS);
+    dog.addImage(DogImage);
+  }
+  
+}
+
+function keyPressed(){
+  
 } 
 
 function readStock(data){
-  food=data.val();
+  foodS=data.val();
 }
 
 function writeStock(x){
